@@ -7,7 +7,7 @@ var HTMLCS_RUNNER = new function() {
 			var content = [];
 			var heading = "";
 			var type = '';
-			var outerHTML = '';
+			var outerHTML = msg.element.outerHTML || '';
 
 			console.log(msgs)
 
