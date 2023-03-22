@@ -57,9 +57,9 @@ var HTMLCS_RUNNER = new function() {
 							 }
 
 						 	if (msg.element.innerHTML && msg.element.innerHTML.length > 50) {
-								var outerHTML = msg.element.outerHTML.replace(msg.element.innerHTML, msg.element.innerHTML.substr(0, 50) + '...');
+  							  outerHTML = msg.element.outerHTML.replace(msg.element.innerHTML, msg.element.innerHTML.substr(0, 50) + '...');
 							} else {
-								var outerHTML = msg.element.outerHTML;
+ 							   outerHTML = msg.element.outerHTML || ''; // initialize outerHTML to empty string
 							}
 							// Get the success criterion so we can provide a link.
 							var msgParts   = msg.code.split('.');
